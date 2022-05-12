@@ -1,0 +1,227 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% "ModernCV" CV and Cover Letter
+% LaTeX Template
+% Version 1.3 (29/10/16)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Xavier Danaux (xdanaux@gmail.com) with modifications by:
+% Vel (vel@latextemplates.com)
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+% Important note:
+% This template requires the moderncv.cls and .sty files to be in the same 
+% directory as this .tex file. These files provide the resume style and themes 
+% used for structuring the document.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[11pt,a4paper,sans]{moderncv} % Font sizes: 10, 11, or 12; paper sizes: a4paper, letterpaper, a5paper, legalpaper, executivepaper or landscape; font families: sans or roman
+
+\moderncvstyle{classic} % CV theme - options include: 'casual' (default), 'classic', 'oldstyle' and 'banking'
+\moderncvcolor{blue} % CV color - options include: 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
+\usepackage{multicol}
+\usepackage{lipsum} % Used for inserting dummy 'Lorem ipsum' text into the template
+\usepackage[hyperref]{}
+\usepackage[scale=0.9]{geometry} % Reduce document margins
+%\setlength{\hintscolumnwidth}{3cm} % Uncomment to change the width of the dates column
+%\setlength{\makecvtitlenamewidth}{10cm} % For the 'classic' style, uncomment to adjust the width of the space allocated to your name
+
+%----------------------------------------------------------------------------------------
+%	NAME AND CONTACT INFORMATION SECTION
+%----------------------------------------------------------------------------------------
+
+\firstname{Wenqing} % Your first name
+\familyname{Zong} % Your last name
+
+% All information in this block is optional, comment out any lines you don't need
+%\title{Curriculum Vitae}
+% \address{116 RKB, IIT Roorkee}{Uttarakhand, India 247667}
+\mobile{(+44) 07713 918152}
+%\phone{(000) 111 1112}
+%\fax{(000) 111 1113}
+\email{wenqing.zong98@gmail.com}
+% \email{asinha@mt.iitr.ac.in}
+% \homepage{sinashish.github.io}{www.sinashish.github.io} % The first argument is the url for the clickable link, the second argument is the url displayed in the template - this allows special characters to be displayed such as the tilde in this example
+\extrainfo{\href{https://github.com/WenqingZong}{Github: WenqingZong}}
+%\photo[70pt][0.4pt]{pictures/picture} % The first bracket is the picture height, the second is the thickness of the frame around the picture (0pt for no frame)
+%\quote{"A witty and playful quotation" - John Smith}
+
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+
+%----------------------------------------------------------------------------------------
+%	COVER LETTER
+%----------------------------------------------------------------------------------------
+
+% To remove the cover letter, comment out this entire block
+
+%\recipient{HR Department}{Corporation\\123 Pleasant Lane\\12345 City, State} % Letter recipient
+%\date{\today} % Letter date
+%\opening{Dear Sir or Madam,} % Opening greeting
+%\closing{Sincerely yours,} % Closing phrase
+%\enclosure[Attached]{curriculum vit\ae{}} % List of enclosed documents
+%
+%\makelettertitle % Print letter title
+%
+%\lipsum[1-2] % Dummy text
+%\lipsum[4] % Dummy text
+%
+%\makeletterclosing % Print letter signature
+%
+%\newpage
+
+%----------------------------------------------------------------------------------------
+%	CURRICULUM VITAE
+%----------------------------------------------------------------------------------------
+
+\makecvtitle % Print the CV title
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Education}
+
+\cventry{2021 - Present}{Imperial College London}{\newline MSc.Advanced Computer science}{}{}{}  % Arguments not required can be left empty
+
+\cventry{2018 - 2021}{The University of Manchester}{\newline BSc.Artificial Intelligence}{}{}{Top 10\% Graduate}  % 
+\cventry{2017 - 2018}{INTO Manchester}{}{}{}{Top 10\% Graduate}  %
+%\section{%Masters Thesis}
+
+%\cvitem{Title}{\emph{Money Is The Root Of All Evil -- Or Is It?}}
+%\cvitem{Supervisors}{Professor James Smith \& Associate Professor Jane Smith}
+%\cvitem{Description}{This thesis explored the idea that money has been the cause of untold anguish and suffering in the world. I found that it has, in fact, not.}
+
+%----------------------------------------------------------------------------------------
+%	WORK EXPERIENCE SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Experience}
+
+%\subsection{%Vocational}
+
+\cventry{Jun 2021 - Aug 2021}{Research Internship}{AgCIM Research Centre}{Guangzhou, China}{}{
+\begin{itemize}
+\item Completed image-based rural area hazard detection system using Pytorch. Core functions include object segmentation and road category classification.
+\item Used MegaDepth network to improve the accuracy of road width calculation module in City Information Modeling (CIM).
+\item Work highly recognized by my colleagues.
+\end{itemize}}
+
+%------------------------------------------------
+
+%\cventry{2011--2012}{Summer Intern}{\textsc{Lehman Brothers}}{Los Angeles}{}{Rated "truly distinctive" for Analytical Skills and Teamwork.}
+
+%------------------------------------------------
+
+\section{Skills}
+
+\cvitem{Languages}{Python, familiar with Java and other C-like}
+\cvitem{Frameworks}{PyTorch, Numpy, familiar with Tensorflow, Spring, OpenGL}
+% \cvitem{WebD}{HTML/CSS, JavaScript, Jekyll}
+\cvitem{Utilities}{Anaconda, IDEA, Jupyter Notebook, Git, Markdown}
+\cvitem{Communication}{English(fluent), Chinese(mother language)}
+
+
+\section{Projects}
+
+\cventry{May 2022 - Present}{Transfer Learning on Brain Metastasis Detection}{\textit{Dr.  Matthew Williams, Imperial College London}}{}{}{
+\begin{itemize}
+\item Apply transfer learning on CT scans to detect Brain Metastasis.
+\item On going project.
+\end{itemize}}
+
+\cventry{Oct 2020 - Apr 2021}{Procedural Terrain Generation}{\textit{Dr Ke Chen, The University of Manchester}}{}{}{
+\begin{itemize}
+\item Used Perlin noise to procedurally generate terrains for modern RPG games and simulated hydraulic erosion process to increase playability. 
+\item Used Spatial GAN model to generate realistic terrain for flight simulation type game.
+\item First Class Final year project (Undergraduate).
+\end{itemize}}
+
+\cventry{Oct 2020 - Dec 2020}{N Body Movement Simulation}{Self-motivated}{\href{https://github.com/WenqingZong/N-Body-Simulator}{[Code]}}{}{
+\begin{itemize}
+\item Built a particle system to simulate the N-Body movement problem in OpenGL.
+\item Used PyQt framework to provide a powerful GUI where users can adjust all parameters of each particle.
+\end{itemize}}
+ 
+\cventry{Oct 2020 - Dec 2020}{MCTS Board Game AI}{Team}{\href{https://github.com/WenqingZong/Kalah_AI}{[Code]}}{}{
+\begin{itemize}
+\item Participated in a team of 4 to develop an AI bot to play a board game, Kalah. 
+\item Our bot was based on Monte Carlo Tree Search with some improvements such as Early Payout Termination, MCTS-Minimax hybrid. 
+\item The bot beats 37 bots submitted by other teams (51 in total) in a tournament.
+\end{itemize}}
+ 
+\cventry{Jan 2020 - May 2020}{EventLite Website}{Team}{}{}{
+\begin{itemize}
+\item Lead a team of 6 people to develop a website, EventLite, in Spring framework.
+\item Set up and maintained the website database.
+\item Code is maintained in a high standard with unit tests and security tests of each function we implemented.
+\end{itemize}}
+
+\cventry{Nov 2019}{Face Recognition}{Self-motivated}{}{}{
+\begin{itemize}
+\item Trained a model by minimising the $L2$-regularised sum of squares loss using the normal equations. 
+\item Achieved 92.5\% accuracy when classifying 40 people. 
+\end{itemize}}
+
+\cventry{Oct 2019 - Jan 2020}{Stendhal Game}{Team}{}{}{
+\begin{itemize}
+\item Worked in a group of 7 to maintain an open source game in GitLab. 
+\item Fixed bugs raised by players and added JUnit tests for them. Introduced new features based on the original game and refactored some hard-to-read legacy code.
+\end{itemize}}
+
+\cventry{Jan 2019}{Yes/No Voice Recognition System}{Self-motivated}{}{}{
+\begin{itemize}
+\item Built a voice recognition system to distinguish "yes" and "no" said by different people with different accent. 
+\item Originally this was a naive Bayes classifier, optimised with Markov chain and hidden Markov Model later on. Achieved 89\% testing accuracy.
+\end{itemize}}
+
+\cventry{Jan 2019}{Robot Localization System}{Self-motivated}{}{}{
+\begin{itemize}
+\item Developed an automatic robot positioning system, which is based on Bayes probability theory. 
+\item Achieve high positioning accuracy even when sensor readings maybe inaccurate, thereby reducing the probability of collision between the robot and obstacles.
+\end{itemize}}
+
+
+\section{Extra Curriculars}
+
+\cventry{Sep 2019 - Jun 2020}{PASS Leader}{The University of Manchester}{}{}{ Helped several first year students in Peer Assisted Study Session, offering academic support and developed interpersonal skills.
+}
+
+\cventry{Sep 2018 - Jun 2019}{Student Representative}{The University of Manchester}{}{}{
+Acted on behalf of students to raise issues we concerned and suggestions to department staff, in order to make a positive difference not only on courses but also the whole CS department community.
+}
+
+%----------------------------------------------------------------------------------------
+%	INTERESTS SECTION
+%----------------------------------------------------------------------------------------
+
+%\section{Interests}
+
+%\renewcommand{\listitemsymbol}{-~} % Changes the symbol used for lists
+
+%\cvlistdoubleitem{Cycling}{Hiking}
+%\cvlistdoubleitem{Sketching}{Gaming}
+%\cvlistitem{Quizzing}
+%----------------------------------------------------------------------------------------
+
+% \section{References}
+
+% \begin{multicols}{2}
+% \cventry{}{K.S Suresh}{\newline Assistant Professor}{\newline Metallurgical and Materials Engg., IIT Roorkee}{\newline suresfmt@iitr.ac.in}{}
+% \columnbreak
+% \cventry{}{Anu Chandra}{\newline CEO}{\newline Ryelore AI}{\newline anu@ryelore.com}{ }
+% \end{multicols}
+%\cventry{}{Arpit Gupta}{\newline VP Engineering}{\newline Antriex IT Services}{\newline arpit.gupta@antmex.com}{}
+
+%\cventry{}{B.S.S Daniel}{\newline Professor}{\newline Metallurgical and Materials Engg., IIT Roorkee}{\newline s4danfmt@iitr.ac.in}{ }
+\end{document}
