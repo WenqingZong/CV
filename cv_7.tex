@@ -110,82 +110,76 @@
 
 %\subsection{%Vocational}
 
+\cventry{Jan 2023 - Present}{Software Engineer}{Codethink}{Manchester, UK}{}{
+\begin{itemize}
+\item Developed and contributed to Free and Open-Source Software to automate quality assurance testing.
+\item Quality Assurance Deamon: Provides remote interaction with a device in place of having to physically interact with it. It's a remote control for test rigs. \href{https://www.codethink.co.uk/articles/2023/qad-for-hardware-testing/}{[Link to Blog Post]}
+\item Testing in a Box: Integrates GitLab server/runner, OpenQA webUI/worker, and Q.A.D. into one box, making it an all-in-one solution for fully automated hardware testing. On-going project.
+\item Skills: C, CI/CD, Ansible, Docker, Team communication, Technical writing for documentation and blog post.
+\end{itemize}}
+
 \cventry{Jun 2021 - Aug 2021}{Research Internship}{AgCIM Research Centre}{Guangzhou, China}{}{
 \begin{itemize}
-\item Completed image-based rural area hazard detection system using Pytorch. Core functions include object segmentation and road category classification.
-\item Used MegaDepth network to improve the accuracy of road width calculation module in City Information Modeling (CIM).
-\item Work highly recognized by my colleagues.
+\item Utilized Pytorch to develop an image-based rural area hazard detection system with core functionalities such as object segmentation and road category classification.
+\item Improved the accuracy of the road width calculation module in City Information Modeling (CIM) by incorporating the MegaDepth network.
 \end{itemize}}
 
 \cventry{Jun 2022 - Aug 2022}{Network Support Engineer - Part Time}{Sobey}{London}{}{
 \begin{itemize}
-\item Used Docker to monitor the status of more than 200 server clusters and maintain the normal operation of the database.
-\item Provides routine maintenance of PCs to non-tech colleagues.
-\item Improved problem-solving and communication skills.
+\item Monitored the status of over 200 server clusters and ensure the proper functioning of the database.
+\item Regularly performs maintenance on PCs for non-technical colleagues.
 \end{itemize}}
 
 
 \section{Skills}
 
-\cvitem{Languages}{Python \& Java, familiar with other C-like languages}
-\cvitem{Frameworks}{PyTorch, Numpy, familiar with TensorFlow, Spring, OpenGL, React, Flask}
-% \cvitem{WebD}{HTML/CSS, JavaScript, Jekyll}
-\cvitem{Utilities}{Linux, Docker, AWS, Anaconda, Git, Markdown, LaTeX, Jenkins}
+\cvitem{Languages}{Python, Java, Rust, C, JavaScript, familiar with C++}
+\cvitem{Frameworks}{PyTorch, Numpy, Spring, OpenGL, Flask, JUnit}
+\cvitem{Utilities}{Linux, Docker, Ansible, Git, Markdown, LaTeX, CI/CD, OpenQA, familiar with AWS}
 \cvitem{Communication}{English(fluent), Chinese(mother language)}
 
 
 \section{Projects}
 
+\cventry{Mar 2023 - May 2023}{Brainf*ck Interpreter in Rust}{}{\href{https://github.com/WenqingZong/BrainfuckInterpreter}{[Code]}}{Rust}{
+\begin{itemize}
+\item Developed a highly optimized interpreter for the Brainfuck language using Rust.
+\item Implemented a modern and user-friendly command-line interface.
+\item Included extensive debugging messages for static checking and runtime errors.
+\item Achieved high test coverage and fully documented the project.
+\end{itemize}}
+
 \cventry{May 2022 - Sep 2022}{Unsupervised Domain Adaptation on Medical Images}{\textit{Dr.  Matthew Williams, Imperial College London}}{\href{https://github.com/WenqingZong/Momentum-Prototype-UDA}{[Code]}}{PyTorch}{
 \begin{itemize}
-\item Proposed a new method to solve domain shift problem so a model trained in one dataset could be used to fit another without obvious performance drop. 
-\item The novel method has the following two advantages:
+\item Devised a novel method for addressing the domain shift problem, enabling a model trained on one dataset to adapt and fit to another dataset without significant loss in performance.
+\item The proposed novel method offers two key benefits:
 \\
-1. Source-Free. The source dataset is not required during model adaptation, which makes cross-institution cooperation more efficient.
+1. Source-Free: Model adaptation does not require the source dataset, which enhances cross-institutional collaboration efficiency and addresses data privacy.
 \\
-2. Support Various Network Backbone. These is no special requirements to neural network architecture, the novel method can easily fit all neural network design.
-\item Tested in BraTS2021 dataset, achieved a similar performance when compared to SOTA paper.
+2. Supports Various Network Backbones: The novel method is compatible with all neural network architectures, without any special requirements.
+\item Demonstrated the efficacy of the proposed method on BraTS2021 dataset, achieving comparable performance with the state-of-the-art approach.
 \end{itemize}}
 
 \cventry{Jan 2022 - Mar 2022}{Robot Learning and Control in Maze Environment}{Self-motivated}{PyTorch}{}{
 \begin{itemize}
-\item Implemented several algorithms to teach robot how to solve a maze.
-\item Traditional algorithm: Cross Entropy Method. The covariance matrix is continuously adjusted to make the action distribution approach the known optimal solution.
-\item Machine Learning: Trained a model to learn this non-linear environment and later used in Model Predictive Control.
-\item Behavioural Cloning. Trained a model to learn how human navigate in this maze. Used DAgger algorithm to further improve performance while reducing amount of data needed.
+\item Implemented several algorithms to teach a robot how to solve a maze.
+\item Traditional algorithm: Cross Entropy Method. Continuously adjusted the covariance matrix to make the action distribution approach the known optimal solution.
+\item Machine Learning: Trained a model to learn the non-linear environment and later used in Model Predictive Control algorithm.
+\item Behavioural Cloning. Trained a model to mimic how humans navigate in the maze. Implemented the DAgger algorithm to improve the model's performance while reducing the amount of data needed.
 \end{itemize}}
 
-\cventry{Nov 2021 - Dec 2021}{Reinforcement Learning in OpenAI Gym CartPole}{Self-motivated}{PyTorch}{}{
+\cventry{Oct 2020 - Apr 2021}{Procedural Terrain Generation for Video Game Development}{\textit{Dr Ke Chen, The University of Manchester}}{PyTorch, C\#, Unity}{}{
 \begin{itemize}
-\item Implemented DQN, Target DQN, DDQN to balance CartPole.
-\item Can reach 500 seconds after fine-tune.
-\end{itemize}}
-
-\cventry{Oct 2021 - Nov 2021}{Indoor Location Inference Based on WIFI Signal Strengths}{Team}{PyTorch}{}{
-\begin{itemize}
-\item A house is equipped with 7 WIFI emitters in its 4 rooms, detect which room we are in based on the signal strengths.
-\item Implemented a decision tree model and used pruning to prevent overfitting. 
-\item Achieved 89.5\% average accuracy and 0.9 F1 score with 10 fold cross validation. 
-\end{itemize}}
-
-\cventry{Oct 2020 - Apr 2021}{Procedural Terrain Generation}{\textit{Dr Ke Chen, The University of Manchester}}{PyTorch, C\#, Unity}{}{
-\begin{itemize}
-\item Used Perlin noise to procedurally generate terrains for modern RPG games and simulated hydraulic erosion process to increase playability. 
-\item Used Spatial GAN model to generate realistic terrain for flight simulation type game.
-\item First Class Final year project (Undergraduate).
-\end{itemize}}
-
-\cventry{Oct 2020 - Dec 2020}{N Body Movement Simulation}{Self-motivated}{\href{https://github.com/WenqingZong/N-Body-Simulator}{[Code]}}{Numpy, PyQt, OpenGL}{
-\begin{itemize}
-\item Built a particle system to simulate the N-Body movement problem in OpenGL.
-\item Used PyQt framework to provide a powerful GUI where users can adjust all parameters of each particle.
+\item Utilized Perlin noise to procedurally generate terrains for modern RPG games and simulated hydraulic erosion process to enhance playability.
+\item Employed Spatial GAN model to generate realistic terrain for a flight simulation game.
+\item Completed as a First Class Final Year project for my undergraduate degree.
 \end{itemize}}
  
 \cventry{Oct 2020 - Dec 2020}{MCTS Board Game AI}{Team}{\href{https://github.com/WenqingZong/Kalah_AI}{[Code]}}{Java}{
 \begin{itemize}
-\item Participated in a team of 4 to develop an AI bot to play a board game, Kalah. 
-\item Our bot was based on Monte Carlo Tree Search with some improvements such as Early Payout Termination, MCTS-Minimax hybrid. 
-\item The bot beats 37 bots submitted by other teams (51 in total) in a tournament.
+\item Collaborated with a team of four to develop an AI bot to play a board game, Kalah.
+\item Implemented a bot based on Monte Carlo Tree Search with some improvements such as Early Payout Termination and MCTS-Minimax hybrid.
+\item Our bot beats 37 bots submitted by other teams (51 in total) in a tournament.
 \end{itemize}}
  
 \cventry{Jan 2020 - May 2020}{EventLite Website}{Team}{Java, Spring, JUnit, Jenkins}{}{
@@ -198,35 +192,29 @@
 \cventry{Oct 2019 - Jan 2020}{Stendhal Game}{Team}{Java, JUnit, Jenkins}{}{
 \begin{itemize}
 \item Worked in a group of 7 to maintain an open source game in GitLab. 
-\item Fixed bugs raised by players and added JUnit tests for them. Introduced new features based on the original game and refactored some hard-to-read legacy code.
+\item Fixed bugs raised by players and added JUnit tests for them. Introduced new story-line based on the original game and refactored some hard-to-read legacy code.
 \end{itemize}}
-
-\cventry{Jan 2019}{Robot Localization System}{Self-motivated}{Java}{}{
-\begin{itemize}
-\item Developed an automatic robot positioning system, which is based on Bayes probability theory. 
-\item Achieve high positioning accuracy even when sensor readings maybe inaccurate, thereby reducing the probability of collision between the robot and obstacles.
-\end{itemize}}
-
 
 \section{Extra Curriculars}
 
 \cventry{Oct 2020 - Mar 2021}{Animal Observer Volunteer}{ZSL Instant Wild}{}{}{
-Identified hundreds of animals from photos to promote behaviour analysis. Enhanced ability to concentrate.
+Identified hundreds of animals from photos to promote behaviour analysis, demonstrating a strong attention to detail and the ability to concentrate for extended periods of time.
 }
 
-\cventry{Sep 2019 - Jun 2020}{PASS Leader}{The University of Manchester}{}{}{ Helped several first year students in Peer Assisted Study Session, offering academic support and developed interpersonal skills.
+\cventry{Sep 2019 - Jun 2020}{PASS Leader}{The University of Manchester}{}{}{
+Helped several first year students in Peer Assisted Study Session, offering academic support and developed interpersonal skills.
 }
 
 \cventry{Dec 2019 - Dec 2019}{Panda Volunteer}{China Conservation and Research Center for Giant Panda}{}{}{
-Helped to clean panda houses, prepared panda food, and recorded data to monitor panda health.
+Assisted in cleaning panda rooms, preparing their food, and collecting data to monitor their health.
 }
 
 \cventry{Sep 2018 - Jun 2019}{Student Representative}{The University of Manchester}{}{}{
-Acted on behalf of students to raise issues we concerned and suggestions to department staff, in order to make a positive difference not only on courses but also the whole CS department community.
+Acted on behalf of students to raise concerns and suggestions to department staff, with the aim of making a positive impact on the CS department community.
 }
 
 \cventry{Jun 2018 - Aug 2018}{IELTS Teaching Assistant}{DISA English}{}{}{
-Helped 9 students to achieve 7+ in IELTS reading and listening part. 
+Assisted nine students in achieving a score of 7 or higher in the reading and listening sections of the IELTS exam.
 }
 
 %----------------------------------------------------------------------------------------
