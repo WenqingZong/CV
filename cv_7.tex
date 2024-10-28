@@ -50,7 +50,7 @@
 %\fax{(000) 111 1113}
 \email{wenqing.zong98@gmail.com}
 % \email{asinha@mt.iitr.ac.in}
-% \homepage{sinashish.github.io}{www.sinashish.github.io} % The first argument is the url for the clickable link, the second argument is the url displayed in the template - this allows special characters to be displayed such as the tilde in this example
+\homepage{zongwenqing.com}{zongwenqing.com} % The first argument is the url for the clickable link, the second argument is the url displayed in the template - this allows special characters to be displayed such as the tilde in this example
 \extrainfo{\href{https://github.com/WenqingZong}{Github: WenqingZong}}
 %\photo[70pt][0.4pt]{pictures/picture} % The first bracket is the picture height, the second is the thickness of the frame around the picture (0pt for no frame)
 %\quote{"A witty and playful quotation" - John Smith}
@@ -109,11 +109,13 @@
 \section{Experience}
 
 %\subsection{%Vocational}
-\cventry{Sep 2023 - Present}{Software Engineer - Full Time}{Emotech}{London, UK}{Rust}{
+\cventry{Sep 2023 - Present}{Software Engineer - Full Time}{Emotech}{London, UK}{Rust + Python}{
 \begin{itemize}
-\item Served as a key member of the production team.
-\item Responsiable for backend API development in Rust, transforming AI models trained by the research team into market-ready products, while employing innovative Rust libraries to minimize API response times.
+\item Served as a key engineer on the ASR (Automatic Speech Recognition) team.
+\item Responsible for backend API development, transforming AI models trained by the research team into market-ready products, employing innovative libraries and algorithms to minimize API response times.
+\item Responsible for developing testing and visualization tools to monitor model performance.
 \item Responsible for Azure SaaS integration to market our products.
+\item Contributed to company's open source Silero VAD (Voice Activity Detection) library.
 \item The product earned high praise from both colleagues and clients.
 \end{itemize}}
 
@@ -137,23 +139,31 @@
 \item Regularly performs maintenance on PCs for non-technical colleagues.
 \end{itemize}}
 
-
 \section{Skills}
 
-\cvitem{Languages}{Rust, Python, Java, C, JavaScript, familiar with C++}
-\cvitem{Frameworks}{Tokio, Ndarray, PyTorch, Spring, OpenGL, Flask, JUnit}
-\cvitem{Utilities}{Linux, Docker, Ansible, Git, Markdown, LaTeX, CI/CD, OpenQA, AWS, Azure}
+\cvitem{Languages}{Proficient in Python, Rust, Java, C, familiar with JavaScript and C++}
+\cvitem{Frameworks}{Tokio, Ndarray, PyTorch, PyTest, Flask, Spring, OpenGL, JUnit}
+\cvitem{Utilities}{WebAssembly, Linux, Docker, Ansible, Git, Markdown, LaTeX, CI/CD, Nginx, AWS, Azure}
 \cvitem{Communication}{English(fluent), Chinese(mother language)}
 
+\section{Prizes}
+
+\cvitem{Oct 2024}{Internet Computer's 5000 USDC prize, awarded at Encode London 2024 Hackathon}
 
 \section{Projects}
 
-\cventry{Jun 2024 - Present}{Rust Voice Acativity Detection Library}{}{\href{https://crates.io/crates/silero_vad}{[Homepage]}}{Rust}{
+\cventry{Oct 2024 - Present}{Python Debug Library}{}{\href{https://pypi.org/project/crab_dbg/}{[PyPI]}}{Python}{
 \begin{itemize}
-\item Ongoing personal open-source project. Published on crates.io
-\item Pure Rust implementation of Silero VAD model and algorithm.
-\item Easy to use batch and streaming interface.
-\item Doing: Async interface. 
+\item Easily inspects values of variables and expressions in a human-readable way.
+\item Supports primitive types, user-defined classes,  nested objects and recursive objects.
+\item Can be used as a drop-in replacement of python's print() function.
+\end{itemize}}
+
+\cventry{Aug 2024 - Present}{Silero Voice Activity Detection Library}{}{\href{https://github.com/emotechlab/silero-rs}{[GitHub]}}{Rust}{
+\begin{itemize}
+\item Pure Rust implementation of Silero VAD model and algorithm. Support running on any hardware.
+\item Easy-to-use batch and streaming interface, plus all the utilities you'd expect to see in an audio project.
+\item In progress: Async interface. 
 \end{itemize}}
 
 \cventry{Jun 2023 - Jul 2023}{Rust Octree Library}{}{\href{https://github.com/WenqingZong/Octree}{[Github]}}{Rust}{
